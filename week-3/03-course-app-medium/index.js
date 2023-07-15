@@ -1,4 +1,6 @@
 const express = require('express');
+const token=require('jsonwbtoken');
+const fs=require('fs');
 const app = express();
 
 app.use(express.json());
@@ -9,7 +11,7 @@ let COURSES = [];
 
 // Admin routes
 app.post('/admin/signup', (req, res) => {
-  // logic to sign up admin
+  
 });
 
 app.post('/admin/login', (req, res) => {
